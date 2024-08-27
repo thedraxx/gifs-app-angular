@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center">
+
+
+  <img [src]="url" class="card-img-top" [alt]="alt" (load)="onLoad()" [ngStyle]="{display: _loaded  ? '' : 'hidden'}" />
+
+
+  <img src="/loader.svg" alt="Loading..." height="auto" width="auto" *ngIf="!_loaded" class="mt-5" />
+
+</div>
